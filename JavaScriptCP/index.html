@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="script/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Cows and Bulls</title>
+</head>
+<body>
+
+    <h1>Cows and Bulls</h1>
+    <h6 class="info">There is a random 5-digits number. Try to guess the number.
+        If the matching digits are in their right positions, they are bulls,
+        if in different positions, they are cows. The cows will be shown as C and the bulls as B
+        Example:
+    </h6>
+    <ul>
+        <li>Secret number: 42716</li>
+        <li>Opponent's try: 12345</li>
+        <li>Answer: 1 bull and 2 cows. (The bull is "2", the cows are "4" and "1".)</li>
+    </ul>
+
+    <div>
+        <form name="nums_form">
+            <input type="number" id="numb_a" name="numb_a" value="1" class="numbers" min="1" max="9" step="1">
+            <input type="number" id="numb_b" name="numb_b" value="2" class="numbers" min="1" max="9" step="1">
+            <input type="number" id="numb_c" name="numb_c" value="3" class="numbers" min="1" max="9" step="1">
+            <input type="number" id="numb_d" name="numb_d" value="4" class="numbers" min="1" max="9" step="1">
+            <input type="number" id="numb_e" name="numb_e" value="5" class="numbers" min="1" max="9" step="1">
+        </form>
+
+        <button onclick="guees()" type="button" name="check" id="check" class="btn-success">CHECK</button>
+
+    </div>
+
+    <div id="history">
+        <p id="output"></p>
+    </div>
+
+</body>
+</html>
